@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
+import Skills from './pages/skills/Skills'
 
 function App() {
 
@@ -13,15 +14,17 @@ function App() {
 
   return (
     <>
-    <main>
-      <AnimatePresence mode='wait'>
-          {/* <Navbar /> */}
+    <main className='main'>
+      {/* <AnimatePresence mode='wait'>
+          <Navbar />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
-      </AnimatePresence>
+      </AnimatePresence> */}
+
+      <Home />
+      <Skills />
     </main>
     </>
   )
