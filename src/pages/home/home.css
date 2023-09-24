@@ -1,5 +1,5 @@
 .home {
-    background-color: var(--first-gradient);
+    background-image: var(--first-gradient);
     min-height: 100vh;
     display: grid;
     align-items: center;
@@ -7,6 +7,7 @@
 
 .home_container {
     width: 100%;
+    position: relative;
 }
 
 .home_subtitle,
@@ -17,6 +18,7 @@
 .home_subtitle,
 .home_job span{
     font-size: var(--small-font-size);
+    color: var(--title-color);
 }
 
 .home_subtitle span,
@@ -73,4 +75,103 @@
     width: 40px;
     height: 2px;
     background-color: var(--border-color);
+}
+
+.home_img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 100%;
+    transform: translateY(-10%);
+    max-width: 480px;
+}
+
+.home_banner {
+    background-color: var(--primary-color);
+    padding-bottom: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.home_profile {
+    position: absolute;
+    bottom: 0;
+    height: 550px;
+    border-radius: 500px;
+    object-fit: cover;
+}
+
+.home_data {
+    position: absolute;
+    border: 2px solid var(--border-color);
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    padding-inline: 20px;
+    width: 250px;
+    height: 82px;
+    border-radius: 82px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.home_data-one {
+    bottom: 20%;
+    left: -25%;
+}
+
+.home_data-two {
+    bottom: 8%;
+    right: -10%;
+}
+
+.home_data .text-lg,
+.home_data .text-sm {
+    width: 50%;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+.home_data .text-lg {
+    text-align: center;
+    font-size: 37px;
+}
+
+.home_data .text-sm {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.home_data .text-lg b ,
+.home_data .text-sm span {
+    color: var(--primary-color);
+}
+
+.home_data .text-lg b {
+    position: relative;
+    top: -4px;
+}
+
+.shape_1 {
+    width: 226px;
+    height: 226px;
+    top: -10%;
+    right: 3%;
+}
+
+.shape_2,
+.shape_3 {
+    width: 121px;
+    height: 101px;
+}
+
+.shape_2 {
+    bottom: 10%;
+    left: -35%;
+}
+
+.shape_3 {
+    bottom: 0%;
+    right: -20%;
 }
