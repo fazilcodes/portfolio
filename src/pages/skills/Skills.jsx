@@ -16,7 +16,7 @@ const Skills = () => {
         <div className="skills_container container grid">
             {skills.map(({name, percentage, description}, index) => {
                 return (
-                    <div className="skills_item">
+                    <div className="skills_item" key={index}>
                         <div className="skills_titles">
                             <h3 className="skills_name">
                                 {name}
