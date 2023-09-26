@@ -4,11 +4,11 @@ import { AnimatePresence } from 'framer-motion'
 
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Skills from './pages/skills/Skills'
 import Portfolio from './pages/portfolio/Portfolio'
 import Resume from './pages/resume/Resume'
+import Contact from './pages/contact/Contact'
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
       <Skills />
       <Portfolio />
       <Resume />
+      <Contact />
     </main>
     </>
   )

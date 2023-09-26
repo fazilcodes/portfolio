@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Card = ({key, title, subtitle, description, date}) => {
+const Card = ({ title, subtitle, description, date}) => {
 
   const [ showInfo, setShowInfo ] = useState(false);
 
