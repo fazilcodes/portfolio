@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { AnimatePresence } from 'framer-motion'
 
 import Home from './pages/home/Home'
-import About from './pages/about/About'
 import Navbar from './components/Navbar'
 import Skills from './pages/skills/Skills'
 import Portfolio from './pages/portfolio/Portfolio'
@@ -26,6 +25,7 @@ function App() {
           </Routes>
       </AnimatePresence> */}
 
+      <Navbar />
       <Home />
       <Skills />
       <Portfolio />

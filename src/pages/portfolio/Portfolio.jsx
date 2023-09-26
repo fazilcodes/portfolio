@@ -10,7 +10,6 @@ import './portfolio.css'
 import { projects } from '../../assets/Data'
 
 const allNavList = ['all', ...new Set(projects.map((project) => project.category))];
-console.log(allNavList);
 
 const Portfolio = () => {
 

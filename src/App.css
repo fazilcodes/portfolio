@@ -45,7 +45,6 @@
 
 /* --------------------- [ global Style ] ------------------------- */
 
-
 * {
     margin: 0;
     padding: 9;
@@ -98,6 +97,24 @@ button {
 img {
     max-width: 100%;
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Light-background */
+
+.light-theme {
+    --title-color: #000;
+    --text-color: #262626;
+    --bg-color: #f0ebe3;
+    --bg-color-alt: #fff;
+    --container-color: #fff;
+    --border-color: #000;
+
+    --shadow: 5px 5px rgb(0, 0, 0, 20%);
+}
+
 
 /* -----------------[Reusable]----------------------- */
 
@@ -156,10 +173,14 @@ img {
     opacity: 1;
 }
 
-.shape {
+.dark-theme .shape {
     position: absolute;
     filter: invert(1);
     opacity: 0.6;
+}
+
+.shape {
+    position: absolute;
 }
 
 .section {
