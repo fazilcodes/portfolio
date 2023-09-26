@@ -9,6 +9,7 @@ import Skills from './pages/skills/Skills'
 import Portfolio from './pages/portfolio/Portfolio'
 import Resume from './pages/resume/Resume'
 import Contact from './pages/contact/Contact'
+import Footer from './pages/footer/Footer'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Portfolio />
       <Resume />
       <Contact />
+      <Footer />
     </main>
     </>
   )
