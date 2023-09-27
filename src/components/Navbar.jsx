@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.css';
 import { links } from '../assets/Data';
+import shapeOne from '../assets/shape-1.png'
 
 import { FaLinkedinIn, FaGithubAlt,  } from 'react-icons/fa';
 import { BsSun, BsMoon } from 'react-icons/bs';
@@ -83,6 +84,10 @@ const Navbar = () => {
                         </div>
                     </ul>
 
+                </div>
+
+                <div className="section_deco deco_left  header_deco">
+                    <img src={shapeOne} className='shape' alt="" />
                 </div>
             </div>
 

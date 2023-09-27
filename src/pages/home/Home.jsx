@@ -6,6 +6,7 @@ import shapeOne from '../../assets/shape-1.png'
 import shapeTwo from '../../assets/shape-2.png'
 
 import { FaLinkedinIn, FaGithubAlt,  } from 'react-icons/fa'
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 import transition from '../../transition';
 
@@ -71,10 +72,19 @@ const Home = () => {
 
           <div className="home_btns">
             <a href="" className="btn text-cs">Download CV</a>
-            <a href="" className='hero_link text-cs'>My Skills</a>
+            <a href="#skills" className='hero_link text-cs'>My Skills</a>
           </div>
         </div>
       </div>
+
+      <a href="#home" className='home_scroll-up'>
+        <AiOutlineArrowUp />
+      </a>
+
+      <div className="section_deco deco_left">
+        <img src={shapeOne} className='shape' alt="" />
+      </div>
+
     </section>
   )
 }

@@ -9,6 +9,30 @@
     align-items: center;
 }
 
+.home_scroll-up {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: .5s var(--transition);
+    color: var(--title-color);
+    font-size: var(--h4-font-size);
+    z-index: 10;
+}
+
+
+.home_scroll-up:hover {
+    transform: scale(1.2);
+}
+
 .home_container {
     width: 100%;
     position: relative;

@@ -45,6 +45,14 @@
 
 /* --------------------- [ global Style ] ------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 9;
@@ -118,6 +126,10 @@ body.no-scroll {
 
 /* -----------------[Reusable]----------------------- */
 
+.main {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1300px;
     margin-inline: auto;
@@ -185,6 +197,7 @@ body.no-scroll {
 
 .section {
     padding-bottom: 220px;
+    position: relative;
 }
 
 .section_title,
@@ -251,4 +264,61 @@ body.no-scroll {
     bottom: -24px;
     width: 141px;
     height: 141px;
+}
+
+/* decoration Styles */
+
+.section_deco {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 70%;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+
+.deco_right {
+    right: 3%;
+}
+
+.deco_left {
+    left: 3%;
+}
+
+.section_deco::before,
+.section_deco::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.section_deco::before {
+    top: 0;
+    transform: translate(-50%, -100%);
+}
+
+.section_deco::after {
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+
+.section_deco .shape {
+    max-width: 226px;
+    height: 226px;
+    bottom: -200px;
+}
+
+.deco_left .shape {
+    left: -170px;
+}
+
+.deco_right .shape {
+    right: -170px;
 }

@@ -5,6 +5,8 @@ import { AnimatePresence } from 'framer-motion'
 
 import List from '../../components/List'
 import Items from '../../components/Items'
+import shapeOne from '../../assets/shape-1.png'
+
 
 import './portfolio.css'
 import { projects } from '../../assets/Data'
@@ -44,6 +46,10 @@ const Portfolio = () => {
               <Items  projectItems={projectItems} />
             </AnimatePresence>
         </div>
+
+        <div className="section_deco deco_left">
+          <img src={shapeOne} className='shape' alt="" />
+      </div>
     </section>
   )
 }
