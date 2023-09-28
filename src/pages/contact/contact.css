@@ -4,6 +4,8 @@
 
 .contact_container {
     grid-template-columns: 5fr 7fr;
+    position: relative;
+    z-index: 10;
 }
 
 .contact_card {
@@ -87,5 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 15px;
 }

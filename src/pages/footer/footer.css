@@ -34,6 +34,7 @@
 .footer_copyright {
     font-size: var(--tiny-font-size);
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .footer_container span {

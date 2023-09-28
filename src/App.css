@@ -22,8 +22,8 @@
     --font-1: 'Jost', sans-serif;
     --font-2: 'Shadows Into Light', cursive;
 
-    --biggest-font-size: 90px;
-    --h1-font-size: 44px;
+    --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+    --h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);;
     --h2-font-size: 30px;
     --h3-font-size: 28px;
     --h4-font-size: 24px;
@@ -123,6 +123,15 @@ body.no-scroll {
     --shadow: 5px 5px rgb(0, 0, 0, 20%);
 }
 
+.light-theme .shape {
+    filter: invert(0);
+    opacity: 1;
+}
+
+.light-theme .bg_title {
+    color: rgba(0, 0, 0, 0.05);
+}
+
 
 /* -----------------[Reusable]----------------------- */
 
@@ -133,7 +142,7 @@ body.no-scroll {
 .container {
     max-width: 1300px;
     margin-inline: auto;
-    padding-inline: 12px;
+    padding-inline: 12px !important;
 }
 
 .grid {
@@ -186,13 +195,14 @@ body.no-scroll {
 }
 
 .dark-theme .shape {
-    position: absolute;
     filter: invert(1);
     opacity: 0.6;
 }
 
 .shape {
     position: absolute;
+    filter: invert(1);
+    opacity: 0.6;
 }
 
 .section {
@@ -230,6 +240,7 @@ body.no-scroll {
     overflow: hidden;
     text-align: left;
     position: relative;
+    z-index: 10;
 }
 
 .card-one {
@@ -321,4 +332,20 @@ body.no-scroll {
 
 .deco_right .shape {
     right: -170px;
+}
+
+.section_bg-wrapper {
+    position: absolute;
+    bottom: 148px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg_title {
+    font-size: clamp(15.625rem, 13.5417rem + 9.5238vw, 21.875rem);
+    font-family: var(--font-2);
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1px;
+    color: rgba(255, 255, 255, 0.02);
 }

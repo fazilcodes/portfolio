@@ -25,7 +25,7 @@
     transition: .5s var(--transition);
     color: var(--title-color);
     font-size: var(--h4-font-size);
-    z-index: 10;
+    z-index: 11;
 }
 
 
@@ -33,9 +33,15 @@
     transform: scale(1.2);
 }
 
+.home_wrapper,
+.home_container,
+.home {
+    position: relative;
+}
+
 .home_container {
     width: 100%;
-    position: relative;
+    z-index: 10;
 }
 
 .home_subtitle,

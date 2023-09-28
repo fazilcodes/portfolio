@@ -57,6 +57,10 @@ const Resume = () => {
         <div className="section_deco deco_right">
             <img src={shapeOne} className='shape' alt="" />
         </div>
+
+        <div className="section_bg-wrapper">
+            <span className='bg_title'>Resume</span>
+        </div>
     </section>
   )
 }

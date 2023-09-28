@@ -85,6 +85,9 @@ const Home = () => {
         <img src={shapeOne} className='shape' alt="" />
       </div>
 
+      <div className="section_bg-wrapper">
+        <span className='bg_title'>Developer</span>
+      </div>
     </section>
   )
 }
