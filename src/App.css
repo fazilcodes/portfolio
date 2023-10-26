@@ -8,7 +8,7 @@
 
 :root {
 
-    --primary-color: hsl(165, 60%, 40%);
+    --primary-color: hsl(0, 72%, 51%);
     --title-color: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 92%);
     --bg-color: hsl(216, 18%, 16%);
@@ -348,4 +348,141 @@ body.no-scroll {
     white-space: nowrap;
     line-height: 1px;
     color: rgba(255, 255, 255, 0.02);
+}
+
+
+
+
+/* ------------------------------MEDIA QUERIES------------------------- */
+
+
+@media screen and (max-width: 1400px) {
+
+    .shape_1 {
+        width: 203px;
+        height: 203px;
+    }
+
+    .shape_2,
+    .shape_3 {
+        width: 126px;
+        height: 126px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .home_subtitle,
+    .home_title,
+    .home_job,
+    .home_text {
+        text-align: center;
+    }
+
+    .home_text {
+        margin-inline: auto;
+    }
+
+    .home_socials,
+    .home_btns {
+        justify-content: center;
+    }
+
+    .bg_title {
+        font-size: 300px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    :root {
+        --h2-font-size: 24px;
+        --h3-font-size: 23px;
+        --h4-font-size: 21px;
+        --h5-font-size: 20px;
+        --largest-font-size: 19px;
+        --larger-font-size: 18px;
+        --large-font-size: 16px;
+        --normal-font-size: 15px;
+        --small-font-size: 14px;
+        --smaller-font-size: 13px;
+        --tiny-font-size: 12px;
+    }
+
+    .container {
+        width: 740px;
+    }
+
+    .hero_link {
+        display: none;
+    }
+
+    .home_btns {
+        flex-direction: column;
+        row-gap: 60px;
+        align-items: center;
+    }
+
+    .bg_title {
+        font-size: 210px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        max-width: 540px;
+    }
+
+    .shape_1 {
+        width: 115px;
+        height: 115px;
+        right: 19%;
+    }
+
+    .shape_2 {
+        left: -25px;
+        width: 72px;
+        height: 72px;
+    }
+
+    .shape_3 {
+        right: -10px;
+        width: 72px;
+        height: 72px;
+    }
+
+    .bg_title {
+        font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        max-width: 376px;
+    }
+
+    .home {
+        margin: 0 auto;
+    }
+
+    .bg_title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .container {
+        max-width: 280px;
+    }
+
+    .bg_title {
+        font-size: 80px;
+    }
 }

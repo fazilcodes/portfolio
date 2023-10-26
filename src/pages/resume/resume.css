@@ -84,3 +84,24 @@
 .resume_description {
     margin-block: 20px 30px;
 }
+
+
+/* ------------MEDIA QUERY--------------- */
+
+@media screen and (max-width: 992px) {
+    .resume_container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .resume_icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resume_container {
+        width: 300px;
+    }
+}

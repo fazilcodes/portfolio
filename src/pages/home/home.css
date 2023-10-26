@@ -1,3 +1,7 @@
+:root {
+    --random_bg: url(../../assets/p.png)
+}
+
 .home {
     background-image: var(--first-gradient);
     padding-bottom: 60px;
@@ -42,6 +46,10 @@
 .home_container {
     width: 100%;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .home_subtitle,
@@ -76,8 +84,10 @@
 
 .home_text {
     font-size: var(--large-font-size);
-    margin-block: 40px 28px;
     max-width: 520px;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 20px;
 }
 
 .home_socials {
@@ -112,80 +122,12 @@
     background-color: var(--border-color);
 }
 
-.home_img-wrapper {
-    position: absolute;
-    top: 0;
-    right: 12px;
-    width: 100%;
-    transform: translateY(-10%);
-    max-width: 480px;
-}
-
-.home_banner {
-    background-color: var(--primary-color);
-    padding-bottom: 100%;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-}
-
 .home_profile {
     position: absolute;
     bottom: 0;
     height: 550px;
     border-radius: 500px;
     object-fit: cover;
-}
-
-.home_data {
-    position: absolute;
-    border: 2px solid var(--border-color);
-    background-color: var(--container-color);
-    box-shadow: var(--shadow);
-    padding-inline: 20px;
-    width: 250px;
-    height: 82px;
-    border-radius: 82px;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
-
-.home_data-one {
-    bottom: 20%;
-    left: -25%;
-}
-
-.home_data-two {
-    bottom: 8%;
-    right: -10%;
-}
-
-.home_data .text-lg,
-.home_data .text-sm {
-    width: 50%;
-    color: var(--title-color);
-    font-weight: 700;
-}
-
-.home_data .text-lg {
-    text-align: center;
-    font-size: 37px;
-}
-
-.home_data .text-sm {
-    font-size: 13px;
-    line-height: 1.5em;
-}
-
-.home_data .text-lg b ,
-.home_data .text-sm span {
-    color: var(--primary-color);
-}
-
-.home_data .text-lg b {
-    position: relative;
-    top: -4px;
 }
 
 .shape_1 {
@@ -210,3 +152,43 @@
     bottom: 0%;
     right: -20%;
 }
+
+.hero_link {
+    cursor: pointer;
+}
+
+/* SVG image styles */
+
+.blob-wobble {
+    width: 150px;
+    height: 130px;
+    background: var(--random_bg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 41% 59% 31% 69% / 51% 72% 28% 49%  ;
+    animation: wobble 10s ease-in-out alternate infinite;
+    box-shadow: 2px 14px 28px -10px rgba(0,0,0,0.7);
+    z-index: 2;
+    margin-top: 20px;
+}
+  
+  /* CSS to animate the blob */
+  
+@keyframes wobble {
+    
+      25% {
+      border-radius: 41% 59% 74% 26% / 51% 31% 69% 49% ;
+      /* transform: scale(0.9) rotate(-5deg); */
+    }
+    
+    50% {
+      border-radius: 23% 77% 73% 27% / 14% 21% 79% 86%  ;
+      /* transform: scale(0.8) rotate(6deg); */
+    }
+    
+    100% {
+      border-radius: 75% 25% 75% 25% / 45% 26% 74% 55%  ;
+      /* transform: scale(0.95) rotate(-9deg); */
+    }
+}
+  

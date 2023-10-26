@@ -93,3 +93,34 @@
     column-gap: 30px;
     row-gap: 15px;
 }
+
+
+
+/* ------------MEDIA QUERY--------------- */
+
+@media screen and (max-width: 992px) {
+    .contact_form-group {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .contact_card-icon {
+        font-size: var(--large-font-size);
+        width: 42px;
+        height: 42px;
+    }
+
+    .contact_card-icon::after {
+        width: 32px;
+    }
+
+    .contact_card {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact_container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -6,7 +6,7 @@ import shapeOne from '../../assets/shape-1.png'
 
 const Skills = () => {
   return (
-    <section className="skills section" id="skills">
+    <section className="skills section" id="skills" name='skills'>
         <h2 className="section_title text-cs">
             Professional Skills
         </h2>

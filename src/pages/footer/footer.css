@@ -40,3 +40,26 @@
 .footer_container span {
     color: var(--primary-color);
 }
+
+
+
+/* ------------MEDIA QUERY--------------- */
+
+@media screen and (max-width: 1200px) {
+    .footer_copyright:nth-child(2) {
+        justify-self: start;   
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer_container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 12px;
+    }
+
+    .footer_copyright:nth-child(2),
+    .footer_copyright:last-child {
+        justify-self: center;
+    }
+}
