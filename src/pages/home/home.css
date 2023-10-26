@@ -76,7 +76,7 @@
 
 .home_title {
     color: #fff;
-    font-size: var(--biggest-font-size);
+    font-size: var(--h1-font-size);
     text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px 0 rgb(0 0 0 / 20%);
     line-height: 1.2;
     margin-top: 15px;
@@ -157,6 +157,19 @@
     cursor: pointer;
 }
 
+.skills_n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills_nimg {
+    width: 20px;
+    height: 20px;
+}
+
+
 /* SVG image styles */
 
 .blob-wobble {
@@ -172,23 +185,19 @@
     margin-top: 20px;
 }
   
-  /* CSS to animate the blob */
   
 @keyframes wobble {
     
       25% {
       border-radius: 41% 59% 74% 26% / 51% 31% 69% 49% ;
-      /* transform: scale(0.9) rotate(-5deg); */
     }
     
     50% {
       border-radius: 23% 77% 73% 27% / 14% 21% 79% 86%  ;
-      /* transform: scale(0.8) rotate(6deg); */
     }
     
     100% {
       border-radius: 75% 25% 75% 25% / 45% 26% 74% 55%  ;
-      /* transform: scale(0.95) rotate(-9deg); */
     }
 }
   

@@ -34,6 +34,10 @@
     cursor: pointer;
 }
 
+.nav_logo span {
+    color: var(--primary-color);
+}
+
 .nav_menu {
     position: fixed;
     top: 0;
@@ -164,16 +168,17 @@
 
 @media screen and (max-width: 1400px) {
 
-    .section_deco:not(.header_deco) {
-        display: none;
-    }
-
     .header {
         padding: 30px 12px;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    .section_deco:not(.header_deco) {
+        display: none;
+    }
+
     .header {
         padding: 24px 12px;
     }

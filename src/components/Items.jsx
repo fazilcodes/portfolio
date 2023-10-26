@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { FaArrowRight } from 'react-icons/fa'
 import shapeTwo from '../assets/shape-2.png'
 
+import { Fade, Bounce, Flip, Roll, Rotate, Zoom, Hinge, JackInTheBox, Slide } from 'react-awesome-reveal'
 
 const Items = ({ projectItems }) => {
   return (
@@ -11,6 +12,7 @@ const Items = ({ projectItems }) => {
       {projectItems.map((projectItem) => {
         const {id, img, category, title, description} = projectItem;
         return (
+          <Fade direction='down' triggerOnce>
           <motion.div 
           layout
           animate = {{ opacity: 1, scale: 1 }}
@@ -33,6 +35,7 @@ const Items = ({ projectItems }) => {
 
             <img src={shapeTwo} alt="" className="shape c_shape" />
           </motion.div>
+          </Fade>
         )
       })}
     </>

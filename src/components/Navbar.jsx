@@ -8,6 +8,8 @@ import { BsSun, BsMoon } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import { animateScroll } from 'react-scroll';
 
+import { Fade, Rotate } from 'react-awesome-reveal';
+
 const Navbar = () => {
 
     const [ showMenu, setShowMenu ] = useState(false)
@@ -51,7 +53,9 @@ const Navbar = () => {
   return (
     <header className={`${scrollNav ? 'scroll-header': ''} header`}>
         <nav className="nav">
-            <Link to='/' onClick={scrollTop} className='nav_logo text-cs'>Fazicodes</Link>
+            <Fade direction='left'>
+                <Link to='/' onClick={scrollTop} className='nav_logo text-cs'>Fazi<span>codes</span></Link>
+            </Fade>
 
             <div className={`${showMenu ? 'nav_menu show-menu' : 'nav_menu'}`}>
                 <div className="nav_data">
@@ -92,14 +96,17 @@ const Navbar = () => {
             </div>
 
             <div className="nav_btns">
-                <div className="theme_toggler" onClick={toggleTheme}>
-                    { theme === 'light-theme' ? <BsMoon /> : <BsSun />}
-                </div>
-
-                <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}>
-                    <span></span>
-                    <span></span>
-                </div>
+                <Fade direction='right'>
+                    <Rotate>
+                        <div className="theme_toggler" onClick={toggleTheme}>
+                            { theme === 'light-theme' ? <BsMoon /> : <BsSun />}
+                        </div>
+                    </Rotate>
+                    <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </Fade>
             </div>
         </nav>
     </header>

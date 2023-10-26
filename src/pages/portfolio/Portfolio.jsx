@@ -7,6 +7,7 @@ import List from '../../components/List'
 import Items from '../../components/Items'
 import shapeOne from '../../assets/shape-1.png'
 
+import { Fade, Bounce, Flip, Roll, Rotate, Zoom, Hinge, JackInTheBox, Slide } from 'react-awesome-reveal'
 
 import './portfolio.css'
 import { projects } from '../../assets/Data'
@@ -31,18 +32,21 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio section" id="work">
-        <h2 className="section_title text-cs">
-            Portfolio
-        </h2>
+        <Fade direction='up' triggerOnce>
+          <h2 className="section_title text-cs">
+              Portfolio
+          </h2>
 
-        <p className="section_subtitle">
-            My <span>Projects</span>
-        </p>
+          <p className="section_subtitle">
+              My <span>Projects</span>
+          </p>
+        </Fade>
 
         <List list={navList} filterItems={filterItems}/>
 
+
         <div className="portfolio_container container grid">
-            <AnimatePresence > 
+            <AnimatePresence> 
               <Items  projectItems={projectItems} />
             </AnimatePresence>
         </div>

@@ -5,11 +5,12 @@
 // import Project5 from './assets/project5.jpg';
 // import Project6 from './assets/project6.jpg';
 
-// import Testimonial1 from './assets/testimonial1.jpg';
-// import Testimonial2 from './assets/testimonial2.jpg';
-// import Testimonial3 from './assets/testimonial3.jpg';
-// import Testimonial4 from './assets/testimonial4.jpg';
-// import Testimonial5 from './assets/testimonial5.jpg';
+import Python from '../assets/py.png'
+import Javascript from '../assets/js.png'
+import React_js from '../assets/react.png'
+import Django from '../assets/django.png'
+import Figma from '../assets/figma.png'
+import Tailwind from '../assets/tailwind.png'
 
 export const links = [
   {
@@ -75,8 +76,9 @@ export const services = [
 export const skills = [
   {
     id: 1,
-    name: 'PHP',
-    percentage: 85,
+    name: 'Python',
+    img: Python,
+    percentage: 90,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
@@ -84,30 +86,34 @@ export const skills = [
   {
     id: 2,
     name: 'JavaScript',
-    percentage: 75,
+    img: Javascript,
+    percentage: 85,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 
   {
     id: 3,
-    name: 'WordPress',
-    percentage: 90,
+    name: 'React',
+    img: React_js,
+    percentage: 80,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 
   {
     id: 4,
-    name: 'Python',
-    percentage: 75,
+    name: 'Django',
+    img: Django,
+    percentage: 95,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 
   {
     id: 5,
-    name: 'React',
+    name: 'Figma',
+    img: Figma,
     percentage: 70,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -115,8 +121,9 @@ export const skills = [
 
   {
     id: 6,
-    name: 'Adobe XD',
-    percentage: 80,
+    name: 'Tailwind',
+    img: Tailwind,
+    percentage: 75,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
@@ -235,45 +242,3 @@ export const cv = [
   },
 ];
 
-// export const testimonials = [
-//   {
-//     id: 1,
-//     img: Testimonial1,
-//     name: 'Barbara Wilson',
-//     author: 'CEO Company',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//   },
-//   {
-//     id: 2,
-//     img: Testimonial2,
-//     name: 'Charlie Smith',
-//     author: 'Designer',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//   },
-//   {
-//     id: 3,
-//     img: Testimonial3,
-//     name: 'Roy Wang',
-//     author: 'Manager GYM',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//   },
-//   {
-//     id: 4,
-//     img: Testimonial4,
-//     name: 'Jennifer Smith',
-//     author: 'CEO & Founder',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//   },
-//   {
-//     id: 5,
-//     img: Testimonial5,
-//     name: 'Paul Freeman',
-//     author: 'Photographer',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//   },
-// ];

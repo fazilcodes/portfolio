@@ -5,6 +5,8 @@ import shapeOne from '../../assets/shape-1.png'
 import { FaRegAddressBook, FaRegEnvelope, FaRegUser, FaRegMap } from 'react-icons/fa'
 import axios from 'axios'
 
+import { Fade } from 'react-awesome-reveal'
+
 const Contact = () => {
 
     const [ form, setForm ] = useState({
@@ -33,99 +35,109 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-        <h2 className="section_title text-cs">
-            Contact Me
-        </h2>
+        <Fade direction='up' triggerOnce>
+            <h2 className="section_title text-cs">
+                Contact Me
+            </h2>
 
-        <p className="section_subtitle">
-            Let's <span>Talk</span>
-        </p>
+            <p className="section_subtitle">
+                Let's <span>Talk</span>
+            </p>
+        </Fade>
 
         <div className="contact_container container grid">
             <div className="contact_content">
-                <div className="contact_card">
-                    <span className="contact_card-icon">
-                        <FaRegMap />
-                    </span>
+                <Fade direction='left' cascade damping={0.1} triggerOnce> 
+                    <div className="contact_card">
+                        <span className="contact_card-icon">
+                            <FaRegMap />
+                        </span>
 
-                    <h3 className='contact_card-title'>Address</h3>
-                    <p className="contact_card-data">Kochi, Kerala, INDIA</p>
-                </div>
-                <div className="contact_card">
-                    <span className="contact_card-icon">
-                        <FaRegUser />
-                    </span>
+                        <h3 className='contact_card-title'>Address</h3>
+                        <p className="contact_card-data">Kochi, Kerala, INDIA</p>
+                    </div>
+                    <div className="contact_card">
+                        <span className="contact_card-icon">
+                            <FaRegUser />
+                        </span>
 
-                    <h3 className='contact_card-title'>Work</h3>
-                    <p className="contact_card-data">Available Now</p>
-                </div>
-                <div className="contact_card">
-                    <span className="contact_card-icon">
-                        <FaRegEnvelope />
-                    </span>
+                        <h3 className='contact_card-title'>Work</h3>
+                        <p className="contact_card-data">Available Now</p>
+                    </div>
+                    <div className="contact_card">
+                        <span className="contact_card-icon">
+                            <FaRegEnvelope />
+                        </span>
 
-                    <h3 className='contact_card-title'>Email</h3>
-                    <p className="contact_card-data">fazilthekkan01@gmail.com</p>
-                </div>
-                <div className="contact_card">
-                    <span className="contact_card-icon">
-                        <FaRegAddressBook />
-                    </span>
+                        <h3 className='contact_card-title'>Email</h3>
+                        <p className="contact_card-data">fazilthekkan01@gmail.com</p>
+                    </div>
+                    <div className="contact_card">
+                        <span className="contact_card-icon">
+                            <FaRegAddressBook />
+                        </span>
 
-                    <h3 className='contact_card-title'>Phone</h3>
-                    <p className="contact_card-data">+91 7736222685</p>
-                </div>
+                        <h3 className='contact_card-title'>Phone</h3>
+                        <p className="contact_card-data">+91 7736222685</p>
+                    </div>
+                </Fade>
             </div>
 
             <form className="contact_form" onSubmit={handleSubmit}>
                 <div className="contact_form-group grid">
+                    <Fade direction='right' cascade damping={0.1} triggerOnce>
+                        <div className="contact_form-div">
+                            <label htmlFor="" className="contact_form-tag text-cs">Full Name <b>*</b></label>
+                            <input 
+                                type="text" 
+                                name='name' 
+                                value={form.name}
+                                onChange={handleChange} 
+                                className="contact_form-input" 
+                            />
+                        </div>
+
+                        <div className="contact_form-div">
+                            <label htmlFor="" className="contact_form-tag text-cs">Email Address <b>*</b></label>
+                            <input 
+                                type="email" 
+                                name='email' 
+                                value={form.email}
+                                onChange={handleChange}
+                                className="contact_form-input" 
+                            />
+                        </div>
+                    </Fade>
+                </div>
+                <Fade direction='right' cascade damping={0.1} triggerOnce>
                     <div className="contact_form-div">
-                        <label htmlFor="" className="contact_form-tag text-cs">Full Name <b>*</b></label>
+                        <label htmlFor="" className="contact_form-tag text-cs">Subject <b>*</b></label>
                         <input 
                             type="text" 
-                            name='name' 
-                            value={form.name}
-                            onChange={handleChange} 
                             className="contact_form-input" 
-                        />
-                    </div>
-
-                    <div className="contact_form-div">
-                        <label htmlFor="" className="contact_form-tag text-cs">Email Address <b>*</b></label>
-                        <input 
-                            type="email" 
-                            name='email' 
-                            value={form.email}
+                            name='subject' 
+                            value={form.subject}
                             onChange={handleChange}
-                            className="contact_form-input" 
                         />
                     </div>
-                </div>
-                <div className="contact_form-div">
-                    <label htmlFor="" className="contact_form-tag text-cs">Subject <b>*</b></label>
-                    <input 
-                        type="text" 
-                        className="contact_form-input" 
-                        name='subject' 
-                        value={form.subject}
-                        onChange={handleChange}
-                    />
-                </div>
 
-                <div className="contact_form-div contact_form-area">
-                    <label htmlFor="" className="contact_form-tag text-cs">Message <b>*</b></label>
-                    <textarea 
-                        type="text" 
-                        className="contact_form-input"
-                        name='message' 
-                        value={form.message}
-                        onChange={handleChange}
-                    />
-                </div>
+                    <div className="contact_form-div contact_form-area">
+                        <label htmlFor="" className="contact_form-tag text-cs">Message <b>*</b></label>
+                        <textarea 
+                            type="text" 
+                            className="contact_form-input"
+                            name='message' 
+                            value={form.message}
+                            onChange={handleChange}
+                        />
+                    </div>
+                </Fade>
 
                 <div className="contact_submit">
-                    <p>* Accept terms and conditions</p>
-                    <button type='submit' className='btn text-cs'>Send Message</button>
+                    <Fade direction='right' cascade damping={0.1} triggerOnce>
+                        <p>* Accept terms and conditions</p>
+                        <button type='submit' className='btn text-cs'>Send Message</button>
+                    </Fade>
                 </div>
             </form>
         </div>

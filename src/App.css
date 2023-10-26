@@ -39,7 +39,6 @@
     --shadow: 5px 5px rgb(255, 255, 255, 10%);
 
     --transition: cubic-bezier(0.3, 0, 0.3, 1);
-
 }
 
 
@@ -284,7 +283,7 @@ body.no-scroll {
     top: 50%;
     transform: translateY(-50%);
     width: 2px;
-    height: 70%;
+    height: 50%;
     background-color: var(--border-color);
     z-index: 1;
 }
@@ -358,6 +357,10 @@ body.no-scroll {
 
 @media screen and (max-width: 1400px) {
 
+    .container {
+        max-width: 850px;
+    }
+
     .shape_1 {
         width: 203px;
         height: 203px;
@@ -372,7 +375,7 @@ body.no-scroll {
 
 @media screen and (max-width: 1200px) {
     .container {
-        max-width: 960px;
+        max-width: 780px;
     }
 
     .home_subtitle,
@@ -414,7 +417,7 @@ body.no-scroll {
     }
 
     .container {
-        width: 740px;
+        width: 700px;
     }
 
     .hero_link {
