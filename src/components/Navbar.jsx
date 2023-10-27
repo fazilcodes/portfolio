@@ -102,11 +102,11 @@ const Navbar = () => {
                             { theme === 'light-theme' ? <BsMoon /> : <BsSun />}
                         </div>
                     </Rotate>
+                </Fade>
                     <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}>
                         <span></span>
                         <span></span>
                     </div>
-                </Fade>
             </div>
         </nav>
     </header>

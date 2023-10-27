@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './portfolio.css'
-import { AnimatePresence } from 'framer-motion'
 
 import List from '../../components/List'
 import Items from '../../components/Items'
 import shapeOne from '../../assets/shape-1.png'
 
-import { Fade, Bounce, Flip, Roll, Rotate, Zoom, Hinge, JackInTheBox, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import './portfolio.css'
 import { projects } from '../../assets/Data'
@@ -18,6 +20,10 @@ const Portfolio = () => {
 
   const [ projectItems, setProjectItems ] = useState(projects);
   const [ navList, setNavList ] = useState(allNavList);
+
+  useEffect(() => {
+    Aos.init({duration: 1000})
+  }, [])
 
   const filterItems = (category) => {
     if (category === 'all') {
@@ -46,9 +52,7 @@ const Portfolio = () => {
 
 
         <div className="portfolio_container container grid">
-            <AnimatePresence> 
-              <Items  projectItems={projectItems} />
-            </AnimatePresence>
+              <Items projectItems={projectItems} />
         </div>
 
         <div className="section_deco deco_left">

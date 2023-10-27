@@ -87,21 +87,23 @@ const Contact = () => {
                 <div className="contact_form-group grid">
                     <Fade direction='right' cascade damping={0.1} triggerOnce>
                         <div className="contact_form-div">
-                            <label htmlFor="" className="contact_form-tag text-cs">Full Name <b>*</b></label>
+                            <label htmlFor="name" className="contact_form-tag text-cs">Full Name <b>*</b></label>
                             <input 
                                 type="text" 
                                 name='name' 
                                 value={form.name}
                                 onChange={handleChange} 
-                                className="contact_form-input" 
+                                className="contact_form-input"
+                                id='name'
                             />
                         </div>
 
                         <div className="contact_form-div">
-                            <label htmlFor="" className="contact_form-tag text-cs">Email Address <b>*</b></label>
+                            <label htmlFor="email" className="contact_form-tag text-cs">Email Address <b>*</b></label>
                             <input 
                                 type="email" 
                                 name='email' 
+                                id='email'
                                 value={form.email}
                                 onChange={handleChange}
                                 className="contact_form-input" 
@@ -111,22 +113,24 @@ const Contact = () => {
                 </div>
                 <Fade direction='right' cascade damping={0.1} triggerOnce>
                     <div className="contact_form-div">
-                        <label htmlFor="" className="contact_form-tag text-cs">Subject <b>*</b></label>
+                        <label htmlFor="subject" className="contact_form-tag text-cs">Subject <b>*</b></label>
                         <input 
                             type="text" 
                             className="contact_form-input" 
                             name='subject' 
+                            id='subject'
                             value={form.subject}
                             onChange={handleChange}
                         />
                     </div>
 
                     <div className="contact_form-div contact_form-area">
-                        <label htmlFor="" className="contact_form-tag text-cs">Message <b>*</b></label>
+                        <label htmlFor="message" className="contact_form-tag text-cs">Message <b>*</b></label>
                         <textarea 
                             type="text" 
                             className="contact_form-input"
                             name='message' 
+                            id='message' 
                             value={form.message}
                             onChange={handleChange}
                         />

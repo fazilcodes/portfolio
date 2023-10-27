@@ -1,14 +1,14 @@
 import React from 'react'
 import './home.css'
 
-import profilepic from '../../assets/profilepic.png'
+import p from '../../assets/p.png'
 import shapeOne from '../../assets/shape-1.png'
 
 import { FaLinkedinIn, FaGithubAlt} from 'react-icons/fa'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 
 import { Link } from 'react-scroll'
-import { Fade} from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
             </p>
           </Fade>
 
-          <div class="blob-wobble" style={{background: profilepic}}></div>
+          <div className="blob-wobble" style={{background: p}}></div>
 
           <Fade direction='up'>
             <p className="home_text">
@@ -58,11 +58,9 @@ const Home = () => {
         </div>
       </div>
       
-      <Fade direction='right'>
-        <a href="#home" className='home_scroll-up'>
-          <AiOutlineArrowUp />
-        </a>
-      </Fade>
+      <Link to="home" offset={-130} className='home_scroll-up'>
+        <AiOutlineArrowUp />
+      </Link>
 
       <div className="section_deco deco_left">
         <img src={shapeOne} className='shape' alt="" />

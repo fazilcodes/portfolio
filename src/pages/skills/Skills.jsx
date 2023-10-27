@@ -23,7 +23,7 @@ const Skills = () => {
             <div className="skills_container container grid">
                 {skills.map(({name, percentage, description, img}, index) => {
                     return (
-                        <Fade direction='up' cascade={false} delay={index * 200} triggerOnce>
+                        <Fade direction='up' cascade={false} delay={index * 200} triggerOnce key={index}>
                             <div className="skills_item" key={index}>
                                 <div className="skills_titles">
                                     <div className="skills_n">

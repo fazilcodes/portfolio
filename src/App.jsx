@@ -1,6 +1,5 @@
 import './App.css'
 
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion'
 
 import Home from './pages/home/Home'
@@ -11,21 +10,18 @@ import Resume from './pages/resume/Resume'
 import Contact from './pages/contact/Contact'
 import Footer from './pages/footer/Footer'
 
-function App() {
-
-  const location = useLocation()
-
+const App = () => {
   return (
     <>
-    <main className='main'>
-      <Navbar />
-      <Home />
-      <Skills />
-      <Portfolio />
-      <Resume />
-      <Contact />
-      <Footer />
-    </main>
+      <main className='main'>
+        <Navbar />
+        <Home />
+        <Skills />
+        <Portfolio />
+        <Resume />
+        <Contact />
+        <Footer />
+      </main>
     </>
   )
 }

@@ -80,7 +80,7 @@ export const skills = [
     img: Python,
     percentage: 90,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      ' Versatile high-level programming language known for its simplicity and readability, ideal for diverse applications and rapid development.',
   },
 
   {
@@ -89,7 +89,7 @@ export const skills = [
     img: Javascript,
     percentage: 85,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Dynamic scripting language enabling interactive web pages and web applications, widely used for front-end and back-end development with a large community.',
   },
 
   {
@@ -98,7 +98,7 @@ export const skills = [
     img: React_js,
     percentage: 80,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'opular JavaScript library for building user interfaces, offering efficient, component-based development and seamless data management.',
   },
 
   {
@@ -107,7 +107,7 @@ export const skills = [
     img: Django,
     percentage: 95,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'High-level Python web framework promoting rapid development and clean, pragmatic design for creating secure and scalable web applications.',
   },
 
   {
@@ -116,7 +116,7 @@ export const skills = [
     img: Figma,
     percentage: 70,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Collaborative interface design tool fostering efficient team workflows for creating, prototyping, and implementing visually appealing digital designs.',
   },
 
   {
@@ -125,14 +125,14 @@ export const skills = [
     img: Tailwind,
     percentage: 75,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Utility-first CSS framework streamlining web design with customizable and responsive components, enhancing rapid and flexible UI development.',
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    img: "",
+    img: "https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
     category: 'Branding',
     title: 'Zorro',
     description:
@@ -183,61 +183,61 @@ export const projects = [
 export const cv = [
   {
     id: 1,
-    title: 'CoderHouse Courses',
-    subtitle: 'Backend Programming',
-    date: '2014 - 2016',
+    title: 'University of Calicut',
+    subtitle: 'Bsc Computer Science',
+    date: '2019 - 2022',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Computer science graduate with expertise in software development and algorithms.',
     category: 'education',
   },
 
   {
     id: 2,
-    title: 'Lviv National Academy of Arts',
-    subtitle: 'Faculty of Design',
-    date: '2012 - 2014',
+    title: 'GHSS Alanallur',
+    subtitle: 'Computer science',
+    date: '2017 - 2019',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Completion of senior secondary education with emphasis on science stream. And a Leap to Tech world',
     category: 'education',
   },
 
   {
     id: 3,
-    title: 'IT Future',
-    subtitle: 'High School',
-    date: '2010 - 2012',
+    title: 'MEMS',
+    subtitle: '10th CBSE',
+    date: '2016 - 2017',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Secondary education with a focus on mathematics and scientific fundamentals.',
     category: 'education',
   },
 
   {
     id: 4,
-    title: 'UI Head & Manager',
-    subtitle: 'Soft Tech Inc.',
-    date: '2020 - PRESENT',
+    title: 'Luminar Technolab',
+    subtitle: 'Python Intership',
+    date: '2023 - PRESENT',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Hands-on Python full-stack development internship, encompassing web applications and databases, fostering expertise in both front-end and back-end technologies.',
     category: 'experience',
   },
 
   {
     id: 5,
-    title: 'UI / UX Specialist',
-    subtitle: 'Kana Design Studio',
-    date: '2018 - 2020',
+    title: 'Riss Technologies',
+    subtitle: 'Python Intership',
+    date: '2022 - 2023',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Engaged in Python internship, acquiring expertise in backend development, data analysis, and automation through practical hands-on projects and mentorship.',
     category: 'experience',
   },
 
   {
     id: 6,
-    title: 'Plugins Developer',
+    title: 'Freelance',
     subtitle: 'Fiverr.com',
-    date: '2016 - 2018',
+    date: '2022 - Present',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'web developer creating responsive and visually appealing websites using modern technologies and frameworks.',
     category: 'experience',
   },
 ];

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './resume.css'
 import { cv } from '../../assets/Data'
 import Card from '../../components/Card'
 import shapeOne from '../../assets/shape-1.png'
 
-import { Fade } from 'react-awesome-reveal'
+import { Fade} from 'react-awesome-reveal'
 
 
 const Resume = () => {
+
   return (
     <section className="resume section" id="resume">
         <Fade direction='up' triggerOnce={true}>
@@ -19,25 +20,23 @@ const Resume = () => {
                 My <span>Story</span>
             </p>
         </Fade>
-
+        
         <div className="resume_container container grid">
             <div className="resume_group">
                 <Fade direction='left' triggerOnce={true}>
                     <h3 className="resume_heading">Education</h3>
                 </Fade>
-
+                
                 <div className="resume_items">
                     {cv.map((val, id) => {
                         if (val.category === 'education') {
-                            return <Fade direction='left' cascade={false} delay={id * 200} triggerOnce={true}>
-                                    <Card 
-                                        key={id} 
-                                        title={val.title} 
-                                        subtitle={val.subtitle} 
-                                        date={val.date} 
-                                        description={val.description} 
-                                    />
-                                </Fade>
+                            return <Card 
+                                key={id} 
+                                title={val.title} 
+                                subtitle={val.subtitle} 
+                                date={val.date} 
+                                description={val.description} 
+                            />
                         }
                     })}
                 </div>
@@ -51,15 +50,13 @@ const Resume = () => {
                 <div className="resume_items">
                     {cv.map((val, id) => {
                         if (val.category === 'experience') {
-                            return <Fade direction='right' delay={id * 200} cascade={false} triggerOnce={true}>
-                                    <Card 
+                            return  <Card 
                                         key={id} 
                                         title={val.title}
                                         subtitle={val.subtitle} 
                                         date={val.date} 
                                         description={val.description} 
                                     />
-                                </Fade>
                         }
                     })}
                 </div>

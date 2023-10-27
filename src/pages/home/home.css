@@ -4,7 +4,7 @@
 
 .home {
     background-image: var(--first-gradient);
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .home_wrapper {
