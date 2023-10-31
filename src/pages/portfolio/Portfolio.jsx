@@ -8,9 +8,6 @@ import shapeOne from '../../assets/shape-1.png'
 
 import { Fade } from 'react-awesome-reveal'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
 import './portfolio.css'
 import { projects } from '../../assets/Data'
 
@@ -20,10 +17,6 @@ const Portfolio = () => {
 
   const [ projectItems, setProjectItems ] = useState(projects);
   const [ navList, setNavList ] = useState(allNavList);
-
-  useEffect(() => {
-    Aos.init({duration: 1000})
-  }, [])
 
   const filterItems = (category) => {
     if (category === 'all') {
