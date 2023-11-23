@@ -12,6 +12,9 @@ import Django from '../assets/django.png'
 import Figma from '../assets/figma.png'
 import Tailwind from '../assets/tailwind.png'
 
+import Dream_fit from '../assets/project_image/dream_fit.png'
+import Blog_daily from '../assets/project_image/blog_daily.png'
+
 export const links = [
   {
     name: 'Home',
@@ -35,44 +38,6 @@ export const links = [
   },
 ];
 
-export const services = [
-  {
-    id: 1,
-    name: 'Web Development',
-    title: 'Web Design & Logo',
-    description:
-      'Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.',
-  },
-  {
-    id: 2,
-    name: ' Apps Development ',
-    title: ' iOS & Android ',
-    description:
-      'Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.',
-  },
-  {
-    id: 3,
-    name: ' Game Development ',
-    title: ' Unity & Unreal Engine ',
-    description:
-      ' Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games. ',
-  },
-  {
-    id: 4,
-    name: ' Advertising ',
-    title: ' Google Ads ',
-    description:
-      ' Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. ',
-  },
-  {
-    id: 5,
-    name: ' Music Writing ',
-    title: ' Sound Track ',
-    description:
-      'Music copying, writing, creating, transcription and composition services.',
-  },
-];
-
 export const skills = [
   {
     id: 1,
@@ -89,7 +54,7 @@ export const skills = [
     img: Javascript,
     percentage: 85,
     description:
-      'Dynamic scripting language enabling interactive web pages and web applications, widely used for front-end and back-end development with a large community.',
+      'Dynamic scripting language enabling interactive web pages and web applications, widely used for front-end and back-end development.',
   },
 
   {
@@ -116,7 +81,7 @@ export const skills = [
     img: Figma,
     percentage: 70,
     description:
-      'Collaborative interface design tool fostering efficient team workflows for creating, prototyping, and implementing visually appealing digital designs.',
+      'Collaborative interface design tool fostering efficient team workflows for creating and implementing visually appealing digital designs.',
   },
 
   {
@@ -132,24 +97,27 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    img: "https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
-    category: 'Branding',
-    title: 'Zorro',
+    img: Dream_fit,
+    category: 'React',
+    title: 'Dream Fit',
+    live: 'https://dream-fit-fazilcodes.vercel.app',
+    code: 'https://github.com/fazilcodes/Dream-Fit-Frontent',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'Fitness Application with Daily Workouts and Preferred muscles workouts Api.',
   },
   {
     id: 2,
-    img: "",
-    category: 'UI UX Design',
-    title: 'Gooir',
+    img: Blog_daily,
+    category: 'Django',
+    title: 'Blog Daily',
+    code: 'https://github.com/fazilcodes/BlogDaily-Django',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'Blog Application With all modern features and authentications',
   },
   {
     id: 3,
     img: "",
-    category: 'Development',
+    category: 'MERN',
     title: 'Explore',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -157,7 +125,7 @@ export const projects = [
   {
     id: 4,
     img: "",
-    category: 'Photography',
+    category: 'Javascript',
     title: 'Mozar',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -165,7 +133,7 @@ export const projects = [
   {
     id: 5,
     img: "",
-    category: 'Development',
+    category: 'HTML & CSS',
     title: 'Stay Fit',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -173,7 +141,7 @@ export const projects = [
   {
     id: 6,
     img: "",
-    category: 'Branding',
+    category: 'FIGMA',
     title: 'Kana',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',

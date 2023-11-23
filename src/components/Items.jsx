@@ -17,7 +17,7 @@ const Items = ({ projectItems }) => {
   return (
     <>
       {projectItems.map((projectItem) => {
-        const {id, img, category, title, description} = projectItem;
+        const {id, img, category, title, description, live, code} = projectItem;
         return (
             <div data-aos="fade-up" className="portfolio_items card card-two" key={id}>
               <div className="portfolio_img-wrapper">
@@ -28,11 +28,16 @@ const Items = ({ projectItems }) => {
               <h3 className='portfolio_title'>{title}</h3>
               <p className="portfolio_description">{description}</p>
 
-              <a href="" className="link">
+              <a href={code} className="link gap">
                 Code
                 <FaArrowRight className='link_icon'></FaArrowRight> 
               </a>
 
+              { live && <a href={live} className="link">
+                Live
+                <FaArrowRight className='link_icon'></FaArrowRight> 
+              </a>  }
+              
               <img src={shapeTwo} alt="" className="shape c_shape" />
             </div>
         )

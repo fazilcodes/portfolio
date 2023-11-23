@@ -259,6 +259,10 @@ body.no-scroll {
     font-weight: 700;
 }
 
+.gap {
+    margin-right: 10px;
+}
+
 .link_icon {
     color: var(--primary-color);
     margin-left: 20px;
