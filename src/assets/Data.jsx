@@ -117,34 +117,49 @@ export const projects = [
   {
     id: 3,
     img: "",
-    category: 'MERN',
-    title: 'Explore',
+    category: 'React',
+    title: 'GamerHaul',
+    code: 'https://github.com/fazilcodes/GamerHaul_React',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'GamerHaul is a stop for all the latest games in the market',
   },
   {
     id: 4,
     img: "",
-    category: 'Javascript',
-    title: 'Mozar',
+    category: 'Django',
+    title: 'Chatbot',
+    code: 'https://github.com/fazilcodes/Django_Chatbot',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'Chat bot with open ai Api and Django Framework',
   },
   {
     id: 5,
     img: "",
     category: 'HTML & CSS',
-    title: 'Stay Fit',
+    title: 'Edumania',
+    code: 'https://github.com/fazilcodes/Edumania',
+    live: 'https://edumania.vercel.app',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'Online Platform for learning and improving skills through various Courses',
   },
   {
     id: 6,
     img: "",
     category: 'FIGMA',
-    title: 'Kana',
+    title: 'Movie-cuts',
+    code: 'https://github.com/fazilcodes/Figma-Projects/tree/master/Movie-cuts',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'Complete Responsive design for a movie-ticket off website',
+  },
+
+  {
+    id: 7,
+    img: "",
+    category: 'Django',
+    title: 'Circle-Studio',
+    code: 'https://github.com/fazilcodes/Circle-Studio-Project',
+    description:
+      'Django Social media application with both frontend and backend with all the latest features such as Auth, CRUD Post, Like, Follow, Search, Recommendation',
   },
 ];
 
