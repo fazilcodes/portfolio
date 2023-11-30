@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             
             <p className="footer_copyright text-cs">
-                Developed by <span>Fazicodes</span>
+                Developed by <span>fazicodes</span>
             </p>
         </div>
     </footer>
