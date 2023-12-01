@@ -13,7 +13,7 @@ const Skills = () => {
         
         <Fade direction='up' triggerOnce>
             <h2 className="section_title text-cs">
-                Professional Skills
+                Pro Skills
             </h2>
 
             <p className="section_subtitle">

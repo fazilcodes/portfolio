@@ -14,9 +14,19 @@ const Items = ({ projectItems }) => {
     Aos.init({duration: 1000})
   }, [])
 
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
+  const shuffledProjectItems = shuffleArray(projectItems.slice());
+
   return (
     <>
-      {projectItems.map((projectItem) => {
+      {shuffledProjectItems.slice(0, 6).map((projectItem) => {
         const {id, img, category, title, description, live, code} = projectItem;
         return (
             <div data-aos="fade-up" className="portfolio_items card card-two" key={id}>
