@@ -38,10 +38,10 @@ const Home = () => {
             </p>
 
             <div className="home_socials">
-              <a href="" className='home_social-link'>
+              <a href="https://www.linkedin.com/in/fazil-thekkan-b9213a262/" className='home_social-link'>
                 <FaLinkedinIn />
               </a>
-              <a href="" className='home_social-link'>
+              <a href="https://github.com/fazilcodes" className='home_social-link'>
                 <FaGithubAlt />
               </a>
             </div>

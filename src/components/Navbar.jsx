@@ -79,10 +79,10 @@ const Navbar = () => {
                             )
                         })}
                         <div className="navbar_socials">
-                            <a href="" className='navbar_social-link'>
+                            <a href="https://www.linkedin.com/in/fazil-thekkan-b9213a262/" className='navbar_social-link'>
                             <FaLinkedinIn />
                             </a>
-                            <a href="" className='navbar_social-link'>
+                            <a href="https://github.com/fazilcodes" className='navbar_social-link'>
                             <FaGithubAlt />
                             </a>
                         </div>

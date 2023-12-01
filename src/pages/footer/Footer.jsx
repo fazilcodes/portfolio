@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="footer">
         <div className="footer_container container grid">
             <div className="footer_socials">
-                <a href="" className='footer_social-link'>
+                <a href="https://www.linkedin.com/in/fazil-thekkan-b9213a262/" className='footer_social-link'>
                 <FaLinkedinIn />
                 </a>
-                <a href="" className='footer_social-link'>
+                <a href="https://github.com/fazilcodes" className='footer_social-link'>
                 <FaGithubAlt />
                 </a>
             </div>
