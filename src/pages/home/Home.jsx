@@ -1,8 +1,9 @@
 import React from 'react'
 import './home.css'
 
-import p from '../../assets/p.png'
+import p from '../../assets/p2.png'
 import shapeOne from '../../assets/shape-1.png'
+import resume from '../../assets/resume.pdf'
 
 import { FaLinkedinIn, FaGithubAlt} from 'react-icons/fa'
 import { AiOutlineArrowUp } from 'react-icons/ai'
@@ -49,7 +50,7 @@ const Home = () => {
 
             <div className="home_btns">
               <Fade direction='left'>
-                <a href="" className="btn text-cs">Download CV</a>
+                <a href={resume} download="Fazil-Thekkan.pdf" className="btn text-cs">Download CV</a>
               </Fade>
               <Fade direction='right'>
                 <Link to='skills' offset={-130}  className='hero_link text-cs'>My Skills</Link>
