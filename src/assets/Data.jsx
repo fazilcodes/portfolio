@@ -63,7 +63,7 @@ export const skills = [
     img: React_js,
     percentage: 80,
     description:
-      'opular JavaScript library for building user interfaces, offering efficient, component-based development and seamless data management.',
+      'Popular JavaScript library for building user interfaces, offering efficient, component-based development and seamless data management.',
   },
 
   {
