@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.css'
 
 import p from '../../assets/p2.png'
@@ -13,6 +13,22 @@ import { Fade } from 'react-awesome-reveal'
 
 
 const Home = () => {
+
+  const [topScroll, setTopScroll] = useState(false)
+
+  const changeScroll = () => {
+    if (window.scrollY >= 80) {
+        setTopScroll(true)
+    }
+    else {
+        setTopScroll(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeScroll)
+  })
+
   return (
     <section className='home' id='home'>
       <div className="home_wrapper">
@@ -59,9 +75,11 @@ const Home = () => {
         </div>
       </div>
       
-      <Link to="home" offset={-130} className='home_scroll-up'>
-        <AiOutlineArrowUp />
-      </Link>
+      {topScroll && 
+        <Link to="home" offset={-130} className='home_scroll-up'>
+          <AiOutlineArrowUp />
+        </Link> 
+      }
 
       <div className="section_deco deco_left">
         <img src={shapeOne} className='shape' alt="" />
