@@ -112,7 +112,7 @@ export const projects = [
     title: 'Blog Daily',
     code: 'https://github.com/fazilcodes/BlogDaily-Django',
     description:
-      'Blog Application With all modern features and authentications',
+      'Blog Application With all modern features, authentication, authorization with postgre sql database',
   },
   {
     id: 3,
