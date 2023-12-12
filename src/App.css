@@ -523,7 +523,7 @@ body.no-scroll {
 }
 
 svg text {
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 600;
     stroke: var(--primary-color);
     stroke-width: 5;
