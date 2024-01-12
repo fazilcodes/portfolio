@@ -14,6 +14,7 @@ import Tailwind from '../assets/tailwind.png'
 
 import Dream_fit from '../assets/project_image/dream_fit.png'
 import Blog_daily from '../assets/project_image/blog_daily.png'
+import movie_cuts from '../assets/project_image/movie-cuts.png'
 
 export const links = [
   {
@@ -144,7 +145,7 @@ export const projects = [
   },
   {
     id: 6,
-    img: "",
+    img: movie_cuts,
     category: 'FIGMA',
     title: 'Movie-cuts',
     code: 'https://github.com/fazilcodes/Figma-Projects/tree/master/Movie-cuts',
