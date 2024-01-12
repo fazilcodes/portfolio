@@ -523,10 +523,9 @@ body.no-scroll {
 }
 
 svg text {
-    font-size: 8rem;
-    font-weight: 600;
+    font-size: 3rem;
     stroke: var(--primary-color);
-    stroke-width: 5;
+    stroke-width: 2;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     animation: preloader 3s infinite alternate;
