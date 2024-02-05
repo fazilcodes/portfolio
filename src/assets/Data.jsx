@@ -15,6 +15,11 @@ import Tailwind from '../assets/tailwind.png'
 import Dream_fit from '../assets/project_image/dream_fit.png'
 import Blog_daily from '../assets/project_image/blog_daily.png'
 import movie_cuts from '../assets/project_image/movie-cuts.png'
+import edumania from '../assets/project_image/edumaniaprev.png'
+import profile_grid from '../assets/project_image/profile_grid.png'
+import visionx_figma from '../assets/project_image/visionx-figma.png'
+import visionx_react from '../assets/project_image/visionx-react.png'
+import cats from '../assets/project_image/catsfig.png'
 
 export const links = [
   {
@@ -135,7 +140,7 @@ export const projects = [
   },
   {
     id: 5,
-    img: "",
+    img: edumania,
     category: 'HTML & CSS',
     title: 'Edumania',
     code: 'https://github.com/fazilcodes/Edumania',
@@ -161,6 +166,45 @@ export const projects = [
     code: 'https://github.com/fazilcodes/Circle-Studio-Project',
     description:
       'Django Social media application with both frontend and backend with all the latest features such as Auth, CRUD Post, Like, Follow, Search, Recommendation',
+  },
+  {
+    id: 8,
+    img: profile_grid,
+    category: 'FIGMA',
+    title: 'Profile-Grid',
+    code: 'https://github.com/fazilcodes/Figma-Projects/tree/master/profile-grid',
+    live: 'https://profilex-bento.vercel.app/',
+    description:
+      'A new bento design style profile-viewer for a stunning online presence for any professional.',
+  },
+  {
+    id: 9,
+    img: visionx_figma,
+    category: 'FIGMA',
+    title: 'Ai-Image Gallery',
+    code: 'https://github.com/fazilcodes/Figma-Projects/tree/master/Ai-image-gallery',
+    live: 'https://visionx-ai.vercel.app/',
+    description:
+      'Figma design of an Ai image collection with modern typos and styles with a Dark theme mode blend',
+  },
+  {
+    id: 10,
+    img: visionx_react,
+    category: 'React',
+    title: 'VisionX',
+    code: 'https://github.com/fazilcodes/VisionX',
+    live: 'https://visionx-ai.vercel.app/',
+    description:
+      'VisionX is an Curated Ai images Database where you can search for astonishing ai images with advanced search implemented',
+  },
+  {
+    id: 11,
+    img: cats,
+    category: 'FIGMA',
+    title: 'kitties',
+    code: 'https://github.com/fazilcodes/Figma-Projects/tree/master/Citties',
+    description:
+      'Figma design for a cat food brand with a cosy touch',
   },
 ];
 
