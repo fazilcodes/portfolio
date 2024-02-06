@@ -20,6 +20,9 @@ import profile_grid from '../assets/project_image/profile_grid.png'
 import visionx_figma from '../assets/project_image/visionx-figma.png'
 import visionx_react from '../assets/project_image/visionx-react.png'
 import cats from '../assets/project_image/catsfig.png'
+import Circle from '../assets/project_image/circle_stud.png'
+import dj_chatbot from '../assets/project_image/dj_chatbot.png'
+import gamerhaul from '../assets/project_image/gamerhaul.png'
 
 export const links = [
   {
@@ -122,7 +125,7 @@ export const projects = [
   },
   {
     id: 3,
-    img: "",
+    img: gamerhaul,
     category: 'React',
     title: 'GamerHaul',
     code: 'https://github.com/fazilcodes/GamerHaul_React',
@@ -131,7 +134,7 @@ export const projects = [
   },
   {
     id: 4,
-    img: "",
+    img: dj_chatbot,
     category: 'Django',
     title: 'Chatbot',
     code: 'https://github.com/fazilcodes/Django_Chatbot',
@@ -160,12 +163,12 @@ export const projects = [
 
   {
     id: 7,
-    img: "",
+    img: Circle,
     category: 'Django',
     title: 'Circle-Studio',
     code: 'https://github.com/fazilcodes/Circle-Studio-Project',
     description:
-      'Django Social media application with both frontend and backend with all the latest features such as Auth, CRUD Post, Like, Follow, Search, Recommendation',
+      'Django Social media application with both frontend and backend with all the latest features',
   },
   {
     id: 8,
@@ -195,7 +198,7 @@ export const projects = [
     code: 'https://github.com/fazilcodes/VisionX',
     live: 'https://visionx-ai.vercel.app/',
     description:
-      'VisionX is an Curated Ai images Database where you can search for astonishing ai images with advanced search implemented',
+      'VisionX is an Curated Ai images Database where you can search for astonishing ai images',
   },
   {
     id: 11,
